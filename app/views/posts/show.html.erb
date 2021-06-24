@@ -4,13 +4,13 @@
   <h3>Name:</h3>
   <%= @post.name %>
 </p>
-<% if !@post.tags.empty? %>
+<!-- <% if !@post.tags.empty? %> -->
   <ul>
     <% @post.tags.each do |tag| %>
-      <li><%= link_to tag.name, tag %></li>
+      <li><%= tag.name %></li>
     <% end %>
   </ul>
-<% end %>
+<!-- <% end %> -->
 
 
 
